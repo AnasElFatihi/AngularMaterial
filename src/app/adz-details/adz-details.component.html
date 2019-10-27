@@ -1,0 +1,16 @@
+<div>
+
+<mat-card >
+    
+        <mat-card-title>
+            {{ data.data.volumeInfo.title}} 
+        </mat-card-title>
+        <mat-card-subtitle>{{ data.data.volumeInfo.description}}</mat-card-subtitle>
+        <img src="{{data.data.volumeInfo.imageLinks.thumbnail}}"mat-card-md-image/> 
+        <p><a href={{data.data.selfLink}}>{{data.data.selfLink}}</a></p>
+        <p>Authors</p>
+        <p *ngFor="let element of data.data.volumeInfo.authors"> {{element}}</p>
+
+</mat-card>
+   
+</div>

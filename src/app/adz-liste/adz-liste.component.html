@@ -1,0 +1,12 @@
+<a routerLink="/home" mat-raised-button>Retour</a>
+<div *ngIf="data">
+<mat-card *ngFor="let element of data.items">
+    
+        <mat-card-title><a (click)="getinfo(element)">
+            {{ element.volumeInfo.title}} 
+        </a></mat-card-title>
+    
+        <mat-card-subtitle>{{ element.volumeInfo.description | slice:0:200}}</mat-card-subtitle>
+   
+</mat-card>
+</div>

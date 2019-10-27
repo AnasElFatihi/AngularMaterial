@@ -1,0 +1,15 @@
+<mat-grid-list cols="4" >
+
+        <mat-grid-tile colspan="4" rowHeight="100px">
+
+                        <mat-form-field>
+                                
+                          <input matInput placeholder="Entrer votre recherche" [(ngModel)]="recherche">
+                        </mat-form-field>
+                        <button (click)="rechercher()" mat-raised-button>Rechercher<mat-icon>search</mat-icon></button>
+                        
+                    </mat-grid-tile>    
+      </mat-grid-list>
+
+      
+      
